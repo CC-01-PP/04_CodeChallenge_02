@@ -16,3 +16,29 @@ Alter 13-17 // Cola
 
 /* Getränke-Challenge */
 
+//Deklaration
+let firstName
+let alter
+
+//Eingabe
+firstName = prompt("Bitte ein Name eingeben:","Name")
+alter = Number(prompt("Bitte gebe ein Alter .", "Alter"))
+
+//
+switch (true) {
+    case (alter >=0 && alter <6):
+        console.log(firstName + " trinkt Milch.")
+        break;
+    case (alter >=6 && alter <13):
+        console.log(firstName + " trinkt Saft.")
+        break;
+    case (alter >=13 && alter <18):
+        console.log(firstName + " trinkt Cola.")
+        break;
+    case (alter >=18):
+        console.log(firstName + " trinkt Wein.")
+        break;
+    default:
+        console.log(firstName + " braucht ein gültiges Alter, um ein Getränk zu bekommen!")
+        break;
+}
